@@ -25,13 +25,6 @@ const firebaseConfig = {
   messagingSenderId: "129696785938",
   appId: "1:129696785938:web:d6b3f97ba99fa629065acb",
   measurementId: "G-VH6NR7Z2R9",
-  // apiKey: "AIzaSyDuN1fZp5clJbXyoDgXbXh-sskdNwYDiBA",
-  // authDomain: "assignment-portal-bbd3d.firebaseapp.com",
-  // projectId: "assignment-portal-bbd3d",
-  // storageBucket: "assignment-portal-bbd3d.appspot.com",
-  // messagingSenderId: "480459652490",
-  // appId: "1:480459652490:web:1bc5023f3951a5b68d9c73",
-  // measurementId: "G-L9XKHGV04T",
   // Initialize Firebase
 };
 
