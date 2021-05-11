@@ -23,31 +23,6 @@ function LessonDetails(props) {
   const [fileurl, setfileurl] = useState(file ? file : undefined);
   const [snackbar, setsnackbar] = React.useState(false);
   const { marks } = props.route.params;
-
-  // useEffect(() => {
-  //     if (Questions && Array.isArray(Questions)) {
-  //         Questions.map(item => {
-  //             var docRef = firebase.firestore().collection("lessons").doc(item);
-
-  //             docRef.get().then((doc) => {
-  //                 if (doc.exists) {
-  //                     console.log("Document data:", doc.data());
-
-  //                     setQuests(oldarr => [...oldarr, { id: item, ...doc.data() }])
-  //                 } else {
-  //                     // doc.data() will be undefined in this case
-  //                     console.log("No such document!");
-  //                 }
-  //             }).catch((error) => {
-  //                 console.log("Error getting document:", error);
-  //             });
-
-  //         })
-  //     }
-
-  //     console.log([] == Array)
-  // }, [Questions
-  // ])
   const ShowSnake = () => {
     setsnackbar(true);
     setTimeout(() => {
@@ -83,18 +58,6 @@ function LessonDetails(props) {
           {fileurl && (
             <Button
               onPress={() => {
-                // FileSystem.downloadAsync(
-                //   "http://techslides.com/demos/sample-videos/small.mp4",
-                //   FileSystem.documentDirectory + "small.pdf"
-                // )
-                //   .then(({ uri }) => {
-                //     console.log("Finished downloading to ", uri);
-                //     ShowSnake();
-                //   })
-                //   .catch((error) => {
-                //     console.error(error);
-                //   });
-                // props.navigation.navigate("PDFViewer", { file });
                 Linking.openURL(file);
               }}
             >
